@@ -1,0 +1,11 @@
+*.pyc
+accueil/
+bottin/
+blog/
+dataentry/
+depot/
+indexmb/
+scopingreview/
+suivi/
+tsm/
+.env
