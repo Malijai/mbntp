@@ -182,3 +182,6 @@ CKEDITOR_CONFIGS = {
 }
 
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+ADMIN_SITE_HEADER = config('ADMIN_SITE_HEADER')
+
