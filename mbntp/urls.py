@@ -17,7 +17,6 @@ from django.conf import settings
 from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.conf import settings
 
 admin.site.site_header = settings.ADMIN_SITE_HEADER
 
@@ -32,6 +31,7 @@ urlpatterns = [
     url(r'^manb/?', include('indexmb.urls')),
     url(r'^dataentry/', include('dataentry.urls')),
     url(r'^scop/', include('scopingreview.urls')),
+    url(r'^recette/', include('recette.urls')),
     url(r'^/?', include('accueil.urls')),
     url(r'^', include('django.contrib.auth.urls')),
 
