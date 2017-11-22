@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-15 21:09-0400\n"
+"POT-Creation-Date: 2017-11-22 15:24-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,39 +43,68 @@ msgstr ""
 "            Ask for a login to the Think-tank </a></p>\n"
 "    "
 
-#: accueil/templates/index.html:38
+#: accueil/templates/index.html:38 accueil/templates/indexmali.html:39
 msgid "Accès au blog"
 msgstr "Go to the blog"
 
-#: accueil/templates/index.html:39 indexmb/templates/index.html:35
+#: accueil/templates/index.html:39 accueil/templates/indexmali.html:40
+#: indexmb/templates/index.html:35
 msgid "Accès au dépot de fichiers"
 msgstr "Go to the file repository"
 
 #: accueil/templates/index.html:42
 msgid "Répertoire des ressources"
-msgstr ""
+msgstr "Resources contacts"
 
 #: accueil/templates/index.html:42
 msgid " Pour rentrer les informations et documents sur les resources"
-msgstr ""
+msgstr "To enter info and doc about resources"
 
 #: accueil/templates/index.html:43
 msgid "Scoping Review"
-msgstr ""
+msgstr "Scoping Review"
 
 #: accueil/templates/index.html:43
 msgid " Scoping review"
-msgstr ""
+msgstr "Scoping Review"
 
 #: accueil/templates/index.html:44
 msgid ""
 "Pour suivre l'envoi et la réception des invitations, accès réservé aux PI :"
 msgstr ""
+"To follow the invitations, only for PIs :"
 
 #: accueil/templates/index.html:45
-#, fuzzy
-#| msgid "Accès au système d'entrée des données"
 msgid "Accès à la liste d'envoi des invitations"
+msgstr "Go to the invitations"
+
+#: accueil/templates/indexmali.html:31
+msgid "Bienvenue sur le site privé NTP2 Community"
+msgstr "Welcome on the NTP2 Community test web site"
+
+#: accueil/templates/indexmali.html:32
+msgid ""
+"\n"
+"            Vous devez être inscrit pour accéder à ce site.</p>\n"
+"            <p>Si vous désirez avoir un accès veuillez en faire la demande "
+"par courriel en suivant ce lien :\n"
+"            <a href=\"mailto:malijai.caulet.ippm@ssss.gouv.qc.ca?"
+"&subject=Inscription%%20pour%%20NTP2%%20Community\">\n"
+"                Demande d'inscription au site du projet NTP2 Community</a></"
+"p>\n"
+"        "
+msgstr ""
+"\n"
+"        You have to register to access to this site. </p>\n"
+"        <p>If you want an access, please email us in "
+"following this link:\n"
+"        <a href=\"mailto:malijai.caulet.ippm@ssss.gouv.qc.ca?"
+"&subject=Inscription%%20to%%20NTP2%%20Community\">\n"
+"  </a></p>\n"
+"    "
+
+#: accueil/templates/indexmali.html:38 indexmb/templates/index.html:36
+msgid "Accès au système d'entrée des données"
 msgstr "Go to the data entry system"
 
 #: blog/forms.py:11
@@ -96,7 +125,7 @@ msgstr "Choose keywords (Ctrl + Click)"
 
 #: blog/forms.py:22
 msgid "Indiquer le groupe cible si nécessaire"
-msgstr ""
+msgstr "Choose a group (if needed)"
 
 #: blog/forms.py:30
 msgid "Entrer un mot clef"
@@ -117,6 +146,11 @@ msgstr "Find"
 #: blog/templates/base.html:27 blog/templates/base_r.html:24
 msgid "Fichiers"
 msgstr "Files"
+
+#: blog/templates/base.html:28 blog/templates/base_r.html:25
+#: depot/templates/base_d.html:25 depot/templates/base_d1.html:25
+msgid "Accueil"
+msgstr "Home"
 
 #: blog/templates/blogdetail.html:8
 #, python-format
@@ -142,7 +176,6 @@ msgid " le : "
 msgstr " on: "
 
 #: blog/templates/blogdetail.html:21
-#, python-format
 msgid ""
 "\n"
 "            <li>Par %(auteurP)s %(auteurN)s le %(date)s</li>\n"
@@ -229,18 +262,7 @@ msgid "Nouveau commentaire dans le blog de l'observatoire"
 msgstr "New comment in the research blog"
 
 #: blog/views.py:40
-#, fuzzy
-#| msgid ""
-#| "Un nouveau commentaire au billet intitulé : {} vient d'être publié par {} "
-#| "{}.\n"
-#| "Vous recevez ce courriel parce que vous ête membre de l'Observatoire en "
-#| "santé mentale et justice du Québec.\n"
-#| "Ne répondez pas à ce courriel, il s'agit d'un envoi automatisé.\n"
-#| "Merci de participer à ce projet.\n"
-#| "\n"
-#| "Malijaï Caulet (malijai.caulet.ippm@ssss.gouv.qc.ca)\n"
 msgid ""
-"\n"
 "Un nouveau commentaire au billet intitulé : {} vient d'être publié par {} "
 "{}.\n"
 "Vous recevez ce courriel parce que vous ête membre de l'Observatoire en "
@@ -249,7 +271,6 @@ msgid ""
 "Merci de participer à ce projet.\n"
 "\n"
 "Malijaï Caulet (malijai.caulet.ippm@ssss.gouv.qc.ca)\n"
-"    "
 msgstr ""
 "A new comment to the post: {} has been written by {} {}.\n"
 "\n"
@@ -264,17 +285,7 @@ msgid "Nouveau billet dans le blog de l'observatoire"
 msgstr "New post in the research blog"
 
 #: blog/views.py:54
-#, fuzzy
-#| msgid ""
-#| "Un nouveau billet intitulé : {} vient d'être publié par {} {}.\n"
-#| "Vous recevez ce courriel parce que vous ête membre de l'Observatoire en "
-#| "santé mentale et justice du Québec.\n"
-#| "Ne répondez pas à ce courriel, il s'agit d'un envoi automatisé.\n"
-#| "Merci de participer à ce projet.\n"
-#| "\n"
-#| "Malijaï Caulet (malijai.caulet.ippm@ssss.gouv.qc.ca)\n"
 msgid ""
-"\n"
 "Un nouveau billet intitulé : {} vient d'être publié par {} {}.\n"
 "Vous recevez ce courriel parce que vous ête membre de l'Observatoire en "
 "santé mentale et justice du Québec.\n"
@@ -303,7 +314,7 @@ msgstr "Description"
 msgid "Nom du sous-dossier"
 msgstr "New sub folder"
 
-#: depot/templates/base_d.html:29 depot/templates/base_d1.html:29
+#: depot/templates/base_d.html:30 depot/templates/base_d1.html:30
 msgid "Dépot de documents"
 msgstr "File repository"
 
@@ -338,10 +349,6 @@ msgstr "Welcome on site of the NTP replication for the Manitoba"
 #: indexmb/templates/index.html:34
 msgid "Accès au blog de l'observatoire"
 msgstr "Go to the blog"
-
-#: indexmb/templates/index.html:36
-msgid "Accès au système d'entrée des données"
-msgstr "Go to the data entry system"
 
 #: mbntp/settings.py:133
 msgid "French"
